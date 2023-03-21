@@ -1,6 +1,9 @@
-# Getting Started with Create React App
+# todolist
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Simple To do list made with react.js.
+![todo](https://user-images.githubusercontent.com/70609940/226763407-d9c1a29e-566c-41df-b52a-a8b934d06107.PNG)
+
+
 
 ## Available Scripts
 
@@ -68,4 +71,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# todolist
+

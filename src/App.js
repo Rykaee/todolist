@@ -1,5 +1,9 @@
 import React, { useState, useEffect } from "react";
 import './App.css';
+import Container from 'react-bootstrap/Container';
+import Navbar from 'react-bootstrap/Navbar';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import konnaLogo from "./img/konna2.png";
 
 //Importing components ->
 import Form from "./components/Form";
@@ -64,21 +68,42 @@ function App() {
 
   return (
     <div className="App">
-     <header>
-      <h1>Todo List</h1>
-    </header>
-    <Form 
-      todos={todos} 
-      setTodos={setTodos} 
-      inputText={inputText} 
-      setInputText={setInputText}
-      setStatus={setStatus}
-    />
-    <TodoList 
-      setTodos={setTodos} 
-      todos={todos}
-      filteredTodos={filteredTodos}
-    />
+    <Navbar bg="dark" expand="lg" sticky="top">
+    <Container>
+          <Navbar.Brand href="#home">
+            <img
+              alt=""
+              src={konnaLogo}
+              width="15%"
+              height="10%"
+              className="d-inline-block align-center"
+              style={{left:0}}
+            />{' '}
+            <div className="custom d-inline-block align-center">
+             <span>Test</span>&nbsp;Comp.
+            </div>
+          </Navbar.Brand>
+        </Container>
+      </Navbar>
+      <Container>
+        <div className="wrapper">
+          <header>
+            <h1><span>Todo</span>List</h1>
+          </header>
+          <Form 
+            todos={todos} 
+            setTodos={setTodos} 
+            inputText={inputText} 
+            setInputText={setInputText}
+            setStatus={setStatus}
+          />
+          <TodoList 
+            setTodos={setTodos} 
+            todos={todos}
+            filteredTodos={filteredTodos}
+          /> 
+        </div> 
+      </Container>
     </div>
   );
 }

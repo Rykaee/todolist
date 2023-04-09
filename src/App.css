@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Gothic+A1|Kaushan+Script|Libre+Baskerville|Lobster');
 * {
   margin: 0;
   padding: 0;
@@ -9,9 +10,44 @@ body {
   font-family: "Poppins", sans-serif;
   min-height: 100vh;
 }
-header {
-  font-size: 2rem;
+header h1 {
+  margin-top: 7%;
+  font-size: 5rem;
+  font-family: 'Kaushan Script','Helvetica Neue',Helvetica,Arial,cursive;
+  color: #ffffff;
 }
+
+h1 span {
+  color: #d87606;
+  font-size:1.20em;
+  font-family: 'Kaushan Script','Helvetica Neue',Helvetica,Arial,cursive;
+}
+
+h1{
+  font-size: 1.5em;
+}
+
+.wrapper{
+  margin-top: 7%;
+  margin-bottom: 7%;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.custom span{
+  color: #d87606;
+  font-size:1.5em;
+  font-family: 'Kaushan Script','Helvetica Neue',Helvetica,Arial,cursive;
+	}
+
+  .custom{
+    font-family: 'Kaushan Script','Helvetica Neue',Helvetica,Arial,cursive;
+    color:#dddbdb;
+    font-size:1.5em;
+  }
 
 header,
 form {
@@ -28,14 +64,21 @@ form button {
   background: white;
 }
 form button {
-  color: #ff6f47;
-  background: #f7fffe;
+  color: #d87606;
+  background: #d87606;
   cursor: pointer;
   transition: all 0.3s ease;
+  font-size: 100%;
+  padding: 0.8em;
+  outline: none;
+  border: 2px solid rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.418);
+  border-radius: 16px;
+  margin-left: 2px;
 }
 form button:hover {
-  background: #ff6f47;
-  color: white;
+  background: #f7fffe;
+  color: #d87606;
 }
 .todo-container {
   display: flex;
@@ -59,6 +102,12 @@ form button:hover {
   transition: all 1s ease;
 }
 .filter-todo {
+  font-size: 100%;
+  padding: 0.8em;
+  outline: none;
+  border: 2px solid rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.418);
+  border-radius: 16px;
   padding: 1rem;
 }
 .todo li {
@@ -77,6 +126,17 @@ form button:hover {
 .complete-btn {
   background: rgb(11, 212, 162);
 }
+
+.todo-input{
+  font-size: 100%;
+  padding: 0.8em;
+  outline: none;
+  border: 2px solid rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.418);
+  border-radius: 16px;
+}
+
+
 .todo-item {
   padding: 0rem 0.5rem;
 }
@@ -115,10 +175,11 @@ select {
   overflow: hidden;
 }
 select {
-  color: #ff6f47;
+  color: #d87606;
   font-family: "Poppins", sans-serif;
   cursor: pointer;
   width: 12rem;
+  border-radius: 16px;
 }
 /* Arrow */
 .select::after {
@@ -127,9 +188,10 @@ select {
   top: 0;
   right: 0;
   padding: 1rem;
-  background: #ff6f47;
+  background: #d87606;
   cursor: pointer;
   pointer-events: none;
+  border-radius: 16px;
 }
 /* Transition */
 /*

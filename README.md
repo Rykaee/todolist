@@ -1,6 +1,13 @@
 # todolist
 
+Updated UI.
+
+![paivitys](https://user-images.githubusercontent.com/70609940/230797104-a1efef5a-1675-4851-b295-70bf84a9c67f.PNG)
+
+
+---------------------
 Simple To do list made with react.js.
+
 ![todo](https://user-images.githubusercontent.com/70609940/226763407-d9c1a29e-566c-41df-b52a-a8b934d06107.PNG)
 
 

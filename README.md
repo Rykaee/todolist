@@ -1,6 +1,6 @@
 # todolist
 
-Updated all other UI components too. 11/04/2023.
+Updated all other UI components too and added some functionality for time tracking. 11/04/2023.
 
 ![updt](https://user-images.githubusercontent.com/70609940/231018660-1f5f06f7-caa5-48a4-b16c-b5f066552310.PNG)
 

@@ -43,6 +43,10 @@ function App() {
         setFilteredTodos(todos.filter(todo => todo.completed === false));
         break;
       
+      case 'inprogress':
+        setFilteredTodos(todos.filter(todo => todo.completed === false && todo.inprogress === true));
+        break;
+
       default: 
         setFilteredTodos(todos);
         break;
@@ -85,7 +89,7 @@ function App() {
           </Navbar.Brand>
         </Container>
       </Navbar>
-      <Container>
+      <Container expand="lg">
         <div className="wrapper">
           <header>
             <h1><span>Todo</span>List</h1>

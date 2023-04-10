@@ -8,6 +8,7 @@ body {
   background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
   color: white;
   font-family: "Poppins", sans-serif;
+  width: 100%;
   min-height: 100vh;
 }
 header h1 {
@@ -28,6 +29,7 @@ h1{
 }
 
 .wrapper{
+  width: 100%;
   margin-top: 7%;
   margin-bottom: 7%;
   background: rgba(255, 255, 255, 0.3);
@@ -64,23 +66,22 @@ form button {
   background: white;
 }
 form button {
-  color: #d87606;
+  color: white;
   background: #d87606;
   cursor: pointer;
   transition: all 0.3s ease;
   font-size: 100%;
-  padding: 0.8em;
-  outline: none;
-  border: 2px solid rgb(255, 255, 255);
-  background-color: rgba(255, 255, 255, 0.418);
+  padding: 1rem;
+  width: 4rem;
   border-radius: 16px;
-  margin-left: 2px;
+  margin-left: 5px;
 }
 form button:hover {
   background: #f7fffe;
   color: #d87606;
 }
 .todo-container {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -93,17 +94,21 @@ form button:hover {
 
 .todo {
   margin: 0.5rem;
-  background: white;
-  font-size: 1.5rem;
-  color: black;
   display: flex;
   justify-content: space-between;
   align-items: center;
   transition: all 1s ease;
+
+  font-size: 1.3rem;
+  padding: 1rem;
+  outline: none;
+  border: 2px solid rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.418);
+  border-radius: 16px;
+  color: #d87606;
 }
 .filter-todo {
   font-size: 100%;
-  padding: 0.8em;
   outline: none;
   border: 2px solid rgb(255, 255, 255);
   background-color: rgba(255, 255, 255, 0.418);
@@ -115,25 +120,34 @@ form button:hover {
 }
 
 .trash-btn,
-.complete-btn {
+.complete-btn, .inprogress-btn {
   background: #ff6f47;
   color: white;
   border: none;
   padding: 1rem;
   cursor: pointer;
   font-size: 1rem;
+  border-radius: 16px;
+  margin-left: 0.5rem;
 }
 .complete-btn {
-  background: rgb(11, 212, 162);
+  background: rgb(10, 170, 82);
+}
+
+.inprogress-btn {
+  background: #3072d4;
+  padding: 1.0rem !important;
+  font-size: 1rem;
 }
 
 .todo-input{
   font-size: 100%;
-  padding: 0.8em;
+  padding: 1rem;
   outline: none;
   border: 2px solid rgb(255, 255, 255);
   background-color: rgba(255, 255, 255, 0.418);
   border-radius: 16px;
+  color: #d87606;
 }
 
 
@@ -142,8 +156,43 @@ form button:hover {
 }
 
 .fa-trash,
-.fa-check {
+.fa-check,
+.fa-hourglass-start {
   pointer-events: none;
+}
+
+.trash-btn:hover{
+  background: white;
+  color: #ff6f47;
+
+}
+
+.complete-btn:hover{
+  background: white;
+  color: rgb(10, 170, 82);
+
+}
+
+.inprogress-btn:hover{
+  background: white;
+  color: #3072d4;
+
+}
+
+.inprogress-btn:active, .fas .fa-hourglass-start {
+  background: #dddbdb;
+  
+}
+
+.inprogress-btn:active::after{
+  color: black;
+  background: #dddbdb;
+
+}
+
+.inprogress-btn:focus{
+  color: black;
+  background: #dddbdb;
 }
 
 .fall {
@@ -154,7 +203,9 @@ form button:hover {
 .completed {
   text-decoration: line-through;
   opacity: 0.5;
+  color: rgb(10, 170, 82);
 }
+
 
 /*CUSTOM SELECTOR */
 select {
@@ -184,6 +235,7 @@ select {
 /* Arrow */
 .select::after {
   content: "\25BC";
+  color: white;
   position: absolute;
   top: 0;
   right: 0;
@@ -194,8 +246,16 @@ select {
   border-radius: 16px;
 }
 /* Transition */
-/*
+
 .select:hover::after {
-  transform: scale(1.5);
+  background: white;
+  color: #d87606;
 }
-*/
+
+@media only screen and (max-width: 768px) {
+  Col {
+    width: 100% !important;
+  }
+}
+
+

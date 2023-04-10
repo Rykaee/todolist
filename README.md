@@ -1,6 +1,12 @@
 # todolist
 
-Updated UI.
+Updated all other UI components too. 11/04/2023.
+
+![updt](https://user-images.githubusercontent.com/70609940/231018660-1f5f06f7-caa5-48a4-b16c-b5f066552310.PNG)
+
+
+
+Updated UI. 10/04/2023.
 
 ![paivitys](https://user-images.githubusercontent.com/70609940/230797104-a1efef5a-1675-4851-b295-70bf84a9c67f.PNG)
 
